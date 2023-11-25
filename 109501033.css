@@ -1,0 +1,103 @@
+ body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin: 50px;
+    }
+
+    h1 {
+      color: #333;
+      background-color:darkgreen;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Times New Roman', serif;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Dropdown Menu Styles */
+    ul.navbar {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex; /* Use flexbox for horizontal centering */
+      justify-content: center; /* Center the menu horizontally */
+      position: relative;
+      top: 2em;
+      left: 2em;
+      width: 10em;
+    }
+
+    ul.navbar li {
+      display: inline-block;
+      position: relative;
+    }
+
+    ul.navbar li a {
+      display: block;
+      padding: 30px 30px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    ul.navbar li a:hover {
+      background-color: #ddd;
+    }
+
+    ul.navbar ul {
+      display: none;
+      position: absolute; 
+      top: 100%;
+      left: 0; 
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    ul.navbar li:hover > ul {
+      display: inherit;
+    }
+
+    ul.navbar ul li {
+      display: list-item;
+      position: relative;
+    }
+
+    ul.navbar ul li a {
+      padding: 10px 20px;
+      color: #333;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    ul.navbar ul li:hover a {
+      background-color: #ddd;
+    }
+
+  
+
+    @media all {
+      body {
+        background-color: #f4f4f4;
+      }
+    }
+
+    @media print {
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+    }
